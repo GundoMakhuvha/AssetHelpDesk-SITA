@@ -1,0 +1,1 @@
+ALTER TABLE public.password_setup_tokens ALTER COLUMN expires_at SET DEFAULT (now() + '10 minutes'::interval);
